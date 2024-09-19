@@ -1,0 +1,1 @@
+ /Users/kilxsx/Downloads/fix_ease-main/.dart_tool/flutter_build/c0778a39579b6ef485814ac47928398f/native_assets.yaml: 
