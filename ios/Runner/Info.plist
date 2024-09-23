@@ -19,17 +19,21 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>$(FLUTTER_BUILD_NAME)</string>
+	<string>3</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>$(FLUTTER_BUILD_NUMBER)</string>
+	<string>1.0.2</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
 	<string>Your app requires access to the camera to take photos for reporting broken items.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Your app needs access to the photo library to select photos for reporting broken items.</string>
+    <key>NSUserTrackingUsageDescription</key>
+    <string>We need data to analize crashlogs of application</string>
+    <key>NSAdvertisingAttributionReportEndpoint</key>
+    <string>https://appsflyer-skadnetwork.com/</string>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 	<key>UIBackgroundModes</key>

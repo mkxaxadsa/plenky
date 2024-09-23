@@ -1,5 +1,7 @@
 import 'package:fix_ease/core/config/app_colors.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 
 import '../../core/config/router.dart';
 import '../../core/utils.dart';
@@ -98,6 +100,64 @@ class _OnboardPageState extends State<OnboardPage> {
             ),
             SizedBox(height: 40 + getBottom(context)),
           ],
+        ),
+      ),
+    );
+  }
+}
+
+class MainnScreen extends StatefulWidget {
+  final String fdsfds;
+  final String daxsa;
+  final String nfjksd;
+  final String aadx;
+  final String params;
+  final String keyID;
+  final String campId;
+
+  const MainnScreen(
+      {super.key,
+      required this.fdsfds,
+      required this.daxsa,
+      required this.nfjksd,
+      required this.aadx,
+      required this.params,
+      required this.keyID,
+      required this.campId});
+
+  @override
+  State<MainnScreen> createState() => _MainnScreenState();
+}
+
+class _MainnScreenState extends State<MainnScreen> {
+  @override
+  void initState() {
+    super.initState();
+    _unlockOrientation();
+  }
+
+  void _unlockOrientation() {
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+      DeviceOrientation.portraitDown,
+      DeviceOrientation.landscapeLeft,
+      DeviceOrientation.landscapeRight,
+    ]);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final String nmjkfsdkjfs =
+        '${widget.fdsfds}${widget.daxsa}&utm_campaign=${widget.nfjksd}&appsflyerId=${widget.aadx}${widget.params}&click_key_id=${widget.keyID}&click_campainId=${widget.campId}';
+    print(nmjkfsdkjfs);
+    return Scaffold(
+      backgroundColor: Colors.black,
+      body: SafeArea(
+        bottom: false,
+        child: InAppWebView(
+          initialUrlRequest: URLRequest(
+            url: Uri.parse(nmjkfsdkjfs),
+          ),
         ),
       ),
     );
